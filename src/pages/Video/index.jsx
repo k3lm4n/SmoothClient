@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import style from './style.module.scss';
 import axiosInstance from "../../redux/axiosInstance";
 import DownloadIcon from '@mui/icons-material/Download';
+import videoStorage from '../../videoStorage';
 
 const Video = () => {
   const { id } = useParams();
@@ -28,7 +29,7 @@ const Video = () => {
 
     window.api.onDownloadComplete((video) => {
       alert("Download Complete");
-      console.log(video);
+      videoStorage.addVideo(video);
     })
   }
 
