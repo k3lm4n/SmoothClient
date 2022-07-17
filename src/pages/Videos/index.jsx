@@ -5,7 +5,7 @@ import style from './style.module.scss';
 
 const Videos = () => {
     const { videos } = useSelector((state) => state.videos);
-    console.log(videos);
+
     return (
         <section className={style.container}>
             <div className={style.heading}>
@@ -13,7 +13,7 @@ const Videos = () => {
                 <span>{videos.length} vídeos</span>
             </div>
             <div className={style.videos_container}>
-                {videos.map((video) => <VideoCard video={video} />)}
+                {videos.map((video) => <VideoCard key={video._id} video={video} />)}
             </div>
         </section>
     )
