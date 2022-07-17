@@ -19,6 +19,7 @@ import Radio from "./pages/Radio";
 import LikedSongs from "./pages/LikedSongs";
 import Profile from "./pages/Profile";
 import Videos from './pages/Videos';
+import { getAllVideos } from "./redux/videosSlice/apiCalls";
 
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
 		if (user && token) {
 			getUser(user._id, dispatch);
 			getPlayLists(dispatch);
+			getAllVideos(dispatch);
 		}
 	}, [dispatch, user]);
 

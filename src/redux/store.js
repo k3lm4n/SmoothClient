@@ -6,6 +6,7 @@ import storage from "redux-persist/lib/storage";
 import authReducer from "./authSlice";
 import PlaylistSlice from "./playListSlice";
 import audioPlayer from "./audioPlayer";
+import videosReducer from "./videosSlice";
 import userSlice from "./userSlice";
 
 const reducers = combineReducers({
@@ -13,6 +14,7 @@ const reducers = combineReducers({
 	playlists: PlaylistSlice,
 	audioPlayer: audioPlayer,
 	user: userSlice,
+	videos: videosReducer,
 });
 
 const persistConfig = {
