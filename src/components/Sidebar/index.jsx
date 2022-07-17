@@ -42,14 +42,6 @@ const Sidebar = () => {
 				<span>Home</span>
 			</NavLink>
 			<NavLink
-				to="/videos"
-				className={styles.menu_link}
-				activeClassName={styles.active_menu}
-			>
-				<VideoLibraryIcon />
-				<span>Vídeos</span>
-			</NavLink>
-			<NavLink
 				to="/search"
 				className={styles.menu_link}
 				activeClassName={styles.active_menu}
@@ -72,6 +64,14 @@ const Sidebar = () => {
 			>
 				<LibraryMusicIcon />
 				<span>Biblioteca</span>
+			</NavLink>
+			<NavLink
+				to="/videos"
+				className={styles.menu_link}
+				activeClassName={styles.active_menu}
+			>
+				<VideoLibraryIcon />
+				<span>Vídeos</span>
 			</NavLink>
 			<div
 				className={styles.create_playlist_btn}
