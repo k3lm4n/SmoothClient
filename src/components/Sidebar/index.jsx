@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { createPlayList } from "../../redux/playListSlice/apiCalls";
 import { CircularProgress } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import SearchIcon from "@mui/icons-material/Search";
 import RadioStream from '@mui/icons-material/Radio';
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
@@ -39,6 +40,14 @@ const Sidebar = () => {
 			>
 				<HomeIcon />
 				<span>Home</span>
+			</NavLink>
+			<NavLink
+				to="/videos"
+				className={styles.menu_link}
+				activeClassName={styles.active_menu}
+			>
+				<VideoLibraryIcon />
+				<span>Vídeos</span>
 			</NavLink>
 			<NavLink
 				to="/search"

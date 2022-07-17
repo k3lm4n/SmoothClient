@@ -18,6 +18,7 @@ import Search from "./pages/Search";
 import Radio from "./pages/Radio";
 import LikedSongs from "./pages/LikedSongs";
 import Profile from "./pages/Profile";
+import Videos from './pages/Videos';
 
 
 const App = () => {
@@ -72,13 +73,14 @@ const App = () => {
 				/>
 				<PrivateRoute exact user={user} path="/search" component={Search} />
 				<PrivateRoute exact user={user} path="/radio" component={Radio} />
+				<PrivateRoute exact user={user} path="/videos" component={Videos} />
 				<PrivateRoute
 					exact
 					user={user}
 					path="/playlist/:id"
 					component={Playlist}
 				/>
-				
+
 				<PrivateRoute exact user={user} path="/me" component={Profile} />
 				{user && <Redirect from="/signup" to="/home" />}
 				{user && <Redirect from="/login" to="/home" />}
