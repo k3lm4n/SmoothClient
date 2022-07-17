@@ -16,9 +16,6 @@ function createWindow() {
     });
 
     win.loadURL(isDev ? DEV_URL : PROD_URL);
-
-    if (isDev)
-        win.webContents.openDevTools({ mode: "detach" });
 }
 
 app.whenReady().then(createWindow);
