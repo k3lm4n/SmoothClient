@@ -21,6 +21,7 @@ import Profile from "./pages/Profile";
 import Videos from './pages/Videos';
 import Video from "./pages/Video";
 import { getAllVideos } from "./redux/videosSlice/apiCalls";
+import Musics from "./pages/Musics";
 
 
 const App = () => {
@@ -78,7 +79,9 @@ const App = () => {
 				<PrivateRoute exact user={user} path="/radio" component={Radio} />
 				<PrivateRoute exact user={user} path="/videos" component={Videos} />
 				<PrivateRoute exact user={user} path="/videos/:id" component={Video} />
+				<PrivateRoute exact user={user} path="/songs" component={Musics} />
 				<PrivateRoute
+
 					exact
 					user={user}
 					path="/playlist/:id"

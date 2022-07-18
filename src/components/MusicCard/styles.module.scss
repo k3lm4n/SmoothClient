@@ -1,0 +1,24 @@
+.card {
+    cursor: pointer;
+    max-width: 180px;
+    padding: 0.3rem;
+
+    &:hover {
+        background-color: #2929299a;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .video_name {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .video_artist {
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+
+}

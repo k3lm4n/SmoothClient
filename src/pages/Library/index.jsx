@@ -11,10 +11,10 @@ const Library = () => {
 			<h1>Playlists</h1>
 			<div className={styles.playlists_container}>
 				<Link to="/collection/tracks">
-					<div className={styles.liked_songs}>
+					{/* <div className={styles.liked_songs}>
 						<h1>Liked Songs</h1>
 						<p>{user.likedSongs.length} Liked Songs</p>
-					</div>
+					</div> */}
 				</Link>
 				<Playlist playlists={playlists} />
 			</div>

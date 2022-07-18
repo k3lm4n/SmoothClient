@@ -5,6 +5,7 @@ import { createPlayList } from "../../redux/playListSlice/apiCalls";
 import { CircularProgress } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import MusicNoteIcon from '@mui/icons-material/MusicNote'
 import SearchIcon from "@mui/icons-material/Search";
 import RadioStream from '@mui/icons-material/Radio';
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
@@ -64,6 +65,14 @@ const Sidebar = () => {
 			>
 				<LibraryMusicIcon />
 				<span>Biblioteca</span>
+			</NavLink>
+			<NavLink
+				to="/songs"
+				className={styles.menu_link}
+				activeClassName={styles.active_menu}
+			>
+				<MusicNoteIcon />
+				<span>Músicas</span>
 			</NavLink>
 			<NavLink
 				to="/videos"
