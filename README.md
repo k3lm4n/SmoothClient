@@ -1,12 +1,10 @@
 <h1>SmoothClient</h1>
-
-<strong>Passo 1</strong>
-
 <p>yarn install</p>
-
-<strong>Passo 2</strong>
+<p>-----ou-----</p>
+<p>npm install</p>
 
 
 <p>yarn start</p>
-
+<p>-----ou-----</p>
+<p>npm run start</p>
 
